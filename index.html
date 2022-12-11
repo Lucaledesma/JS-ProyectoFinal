@@ -27,17 +27,17 @@
         
                 <div class="header-barra">
                     <div class="header-contactos">
-                        <a href="tel:0111523456789">
+                        <a class="contactos-enlace" href="tel:0111523456789">
                             <i class="bi bi-telephone-fill"></i>
-                            <span>+5491523456789</span>
+                            <span class="enlace-info">+5491523456789</span>
                         </a>
-                        <a href="mailto:tiendavirtual@gmail.com">
+                        <a class="contactos-enlace" href="mailto:tiendavirtual@gmail.com">
                             <i class="bi bi-envelope"></i>
-                            <span>tiendavirtual@gmail.com</span>
+                            <span class="enlace-info">tiendavirtual@gmail.com</span>
                         </a>
-                        <a href="https://www.instagram.com/">
+                        <a class="contactos-enlace" href="https://www.instagram.com/">
                             <i class="bi bi-instagram"></i>
-                            <span>TiendaVirtual</span>
+                            <span class="enlace-info">TiendaVirtual</span>
                         </a>
                     </div>
         
@@ -66,45 +66,27 @@
                 </ul>
             </div>
 
-            <div>
-                <img class="main-img" src="./img/slider.png" alt="Slider Ecommerce">
-            </div>
+            <img class="main-img" src="./img/slider.png" alt="Slider Ecommerce">
 
         </aside>
 
-        <div class="boton-carrito">
+        <div class="boton-carrito" id="boton-carrito">
             <div class="numero">
-                <p id="numero">1</p>
+                <p id="cantidad-productos">0</p>
             </div>
             <i class="bi bi-cart-fill"></i>
         </div>
 
-        <div class="main-carrito disabled">
+        <div class="main-carrito disabled" id="main-carrito">
 
             <div class="carrito-titulo">
                 <h4 class="titulo">Carrito</h4>
                 <div class="vaciar"><small><b>Vaciar carrito</b></small></div>
-                <div class="cerrar"><i class="bi bi-x"></i></div>
+                <div class="cerrar" id="cerrar-carrito"><i class="bi bi-x"></i></div>
             </div>
 
-            <div class="carrito-productos">
-
-                <div class="producto-agregado">
-                    <div class="producto-img"><img src="./img/productos/cooperativo/03.jpg" alt=""></div>
-                    <div class="producto-nombre">It Takes Two</div>
-                    <div class="producto-cantidad">1</div>
-                    <div class="producto-precio">$1000</div>
-                    <div class="producto-borrar"><i class="bi bi-trash-fill"></i></div>
-                </div>
-
-                <div class="producto-agregado">
-                    <div class="producto-img"><img src="./img/productos/deportes/01.jpg" alt=""></div>
-                    <div class="producto-nombre">Captain Tsubasa</div>
-                    <div class="producto-cantidad">1</div>
-                    <div class="producto-precio">$1000</div>
-                    <div class="producto-borrar"><i class="bi bi-trash-fill"></i></div>
-                </div>
-
+            <div class="carrito-productos" id="carrito-productos">
+                <!-- Aca se cargan los productos del carrito -->
             </div>
 
             <a href="./carrito.html">
@@ -118,227 +100,14 @@
 
         </div>
 
-        <section class="main-productos">
+        <div class="contenedor-main-productos">
 
             <h3 class="nombre-categoria disabled">DISPAROS</h3>
 
-            <div class="producto">
-                <img src="./img/productos/deportes/01.jpg" alt="">
-                <div class="producto-descripcion">
-                    <p><b></b></p>
-                    <p>$1000</p>
-                    <button class="producto-agregar" id="1">AGREGAR</button>
-                </div>
-            </div>
-    
-            <div class="producto">
-                <img src="./img/productos/deportes/02.jpg" alt="">
-                <div class="producto-descripcion">
-                    <p><b></b></p>
-                    <p>$1000</p>
-                    <button class="producto-agregar" id="1">AGREGAR</button>
-                </div>
-            </div>
-    
-            <div class="producto">
-                <img src="./img/productos/deportes/03.jpg" alt="">
-                <div class="producto-descripcion">
-                    <p><b></b></p>
-                    <p>$1000</p>
-                    <button class="producto-agregar" id="1">AGREGAR</button>
-                </div>
-            </div>
-    
-            <div class="producto">
-                <img src="./img/productos/deportes/04.jpg" alt="">
-                <div class="producto-descripcion">
-                    <p><b></b></p>
-                    <p>$1000</p>
-                    <button class="producto-agregar" id="1">AGREGAR</button>
-                </div>
-            </div>
-
-            <div class="producto">
-                <img src="./img/productos/deportes/05.jpg" alt="">
-                <div class="producto-descripcion">
-                    <p><b></b></p>
-                    <p>$1000</p>
-                    <button class="producto-agregar" id="1">AGREGAR</button>
-                </div>
-            </div>
-    
-            <div class="producto">
-                <img src="./img/productos/deportes/06.jpg" alt="">
-                <div class="producto-descripcion">
-                    <p><b></b></p>
-                    <p>$1000</p>
-                    <button class="producto-agregar" id="1">AGREGAR</button>
-                </div>
-            </div>
-    
-            <div class="producto">
-                <img src="./img/productos/cooperativo/01.jpg" alt="">
-                <div class="producto-descripcion">
-                    <p><b></b></p>
-                    <p>$1000</p>
-                    <button class="producto-agregar" id="1">AGREGAR</button>
-                </div>
-            </div>
-    
-            <div class="producto">
-                <img src="./img/productos/cooperativo/02.jpg" alt="">
-                <div class="producto-descripcion">
-                    <p><b></b></p>
-                    <p>$1000</p>
-                    <button class="producto-agregar" id="1">AGREGAR</button>
-                </div>
-            </div>
-
-            <div class="producto">
-                <img src="./img/productos/cooperativo/03.jpg" alt="">
-                <div class="producto-descripcion">
-                    <p><b></b></p>
-                    <p>$1000</p>
-                    <button class="producto-agregar" id="1">AGREGAR</button>
-                </div>
-            </div>
-    
-            <div class="producto">
-                <img src="./img/productos/cooperativo/04.jpg" alt="">
-                <div class="producto-descripcion">
-                    <p><b></b></p>
-                    <p>$1000</p>
-                    <button class="producto-agregar" id="1">AGREGAR</button>
-                </div>
-            </div>
-    
-            <div class="producto">
-                <img src="./img/productos/cooperativo/05.jpg" alt="">
-                <div class="producto-descripcion">
-                    <p><b></b></p>
-                    <p>$1000</p>
-                    <button class="producto-agregar" id="1">AGREGAR</button>
-                </div>
-            </div>
-    
-            <div class="producto">
-                <img src="./img/productos/cooperativo/06.jpg" alt="">
-                <div class="producto-descripcion">
-                    <p><b></b></p>
-                    <p>$1000</p>
-                    <button class="producto-agregar" id="1">AGREGAR</button>
-                </div>
-            </div>
-
-            <div class="producto">
-                <img src="./img/productos/disparos/01.jpg" alt="">
-                <div class="producto-descripcion">
-                    <p><b></b></p>
-                    <p>$1000</p>
-                    <button class="producto-agregar" id="1">AGREGAR</button>
-                </div>
-            </div>
-    
-            <div class="producto">
-                <img src="./img/productos/disparos/02.jpg" alt="">
-                <div class="producto-descripcion">
-                    <p><b></b></p>
-                    <p>$1000</p>
-                    <button class="producto-agregar" id="1">AGREGAR</button>
-                </div>
-            </div>
-    
-            <div class="producto">
-                <img src="./img/productos/disparos/03.jpg" alt="">
-                <div class="producto-descripcion">
-                    <p><b></b></p>
-                    <p>$1000</p>
-                    <button class="producto-agregar" id="1">AGREGAR</button>
-                </div>
-            </div>
-    
-            <div class="producto">
-                <img src="./img/productos/disparos/04.jpg" alt="">
-                <div class="producto-descripcion">
-                    <p><b></b></p>
-                    <p>$1000</p>
-                    <button class="producto-agregar" id="1">AGREGAR</button>
-                </div>
-            </div>
-
-            <div class="producto">
-                <img src="./img/productos/disparos/05.jpg" alt="Battlefield 2042">
-                <div class="producto-descripcion">
-                    <p><b></b></p>
-                    <p>$1000</p>
-                    <button class="producto-agregar" id="1">AGREGAR</button>
-                </div>
-            </div>
-    
-            <div class="producto">
-                <img src="./img/productos/disparos/06.jpg" alt="">
-                <div class="producto-descripcion">
-                    <p><b></b></p>
-                    <p>$1000</p>
-                    <button class="producto-agregar" id="1">AGREGAR</button>
-                </div>
-            </div>
-    
-            <div class="producto">
-                <img src="./img/productos/mundo-abierto/01.jpg" alt="">
-                <div class="producto-descripcion">
-                    <p><b></b></p>
-                    <p>$1000</p>
-                    <button class="producto-agregar" id="1">AGREGAR</button>
-                </div>
-            </div>
-
-            <div class="producto">
-                <img src="./img/productos/mundo-abierto/02.jpg" alt="Battlefield 2042">
-                <div class="producto-descripcion">
-                    <p><b></b></p>
-                    <p>$1000</p>
-                    <button class="producto-agregar" id="1">AGREGAR</button>
-                </div>
-            </div>
-    
-            <div class="producto">
-                <img src="./img/productos/mundo-abierto/03.jpg" alt="">
-                <div class="producto-descripcion">
-                    <p><b></b></p>
-                    <p>$1000</p>
-                    <button class="producto-agregar" id="1">AGREGAR</button>
-                </div>
-            </div>
-    
-            <div class="producto">
-                <img src="./img/productos/mundo-abierto/04.jpg" alt="">
-                <div class="producto-descripcion">
-                    <p><b></b></p>
-                    <p>$1000</p>
-                    <button class="producto-agregar" id="1">AGREGAR</button>
-                </div>
-            </div>
-    
-            <div class="producto">
-                <img src="./img/productos/mundo-abierto/05.jpg" alt="">
-                <div class="producto-descripcion">
-                    <p><b></b></p>
-                    <p>$1000</p>
-                    <button class="producto-agregar" id="1">AGREGAR</button>
-                </div>
-            </div>
-
-            <div class="producto">
-                <img src="./img/productos/mundo-abierto/06.jpg" alt="">
-                <div class="producto-descripcion">
-                    <p><b></b></p>
-                    <p>$1000</p>
-                    <button class="producto-agregar" id="1">AGREGAR</button>
-                </div>
-            </div>
-            
-        </section>
+            <section class="main-productos" id="main-productos">
+                <!-- Aca van cargados los productos -->
+            </section>
+        </div>
 
     </main>
 
@@ -377,5 +146,6 @@
     </footer> -->
         
     <script src="./js/main.js"></script>
+
 </body>
 </html>

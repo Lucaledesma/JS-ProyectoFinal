@@ -1,3 +1,73 @@
+/********* CARRITO - PASOS DE CONFIRMACION *********/
+const divDetalles = document.querySelector("#detalles");
+const divPago = document.querySelector("#pago");
+const divConfirmacion = document.querySelector("#confirmacion");
+
+const carritoDetallesForm = document.querySelector("#carrito-detalles-form");
+
+const carritoPagoFormConfirmar = document.querySelector("#carrito-pago-form");
+const BotonPagoFormAtras = document.querySelector("#boton-pago-atras");
+
+const pasosDetallesNumero = document.querySelector("#pasos-detalles-numero");
+const pasosDetallesTexto = document.querySelector("#pasos-detalles-texto");
+const pasosPagoNumero = document.querySelector("#pasos-pago-numero");
+const pasosPagoTexto = document.querySelector("#pasos-pago-texto");
+const pasosConfirmacionNumero = document.querySelector("#pasos-confirmacion-numero");
+const pasosConfirmacionTexto = document.querySelector("#pasos-confirmacion-texto");
+
+/* Detalle Compra */
+carritoDetallesForm.addEventListener("submit", confirmarDetalles);
+
+/* Pago Compra */
+BotonPagoFormAtras.addEventListener("click", atrasPago);
+carritoPagoFormConfirmar.addEventListener("submit", confirmarPago);
+
+function confirmarDetalles (evt) {
+    evt.preventDefault();
+
+    pasosDetallesNumero.classList.remove("active");
+    pasosDetallesTexto.classList.remove("active");
+
+    pasosPagoNumero.classList.add("active");
+    pasosPagoTexto.classList.add("active");
+    
+    pasosConfirmacionNumero.classList.remove("active");
+    pasosConfirmacionTexto.classList.remove("active");
+    
+    divDetalles.classList.add("disabled");
+    divPago.classList.remove("disabled");
+}
+
+function atrasPago (evt) {
+    evt.preventDefault();
+    
+    pasosDetallesNumero.classList.add("active");
+    pasosDetallesTexto.classList.add("active");
+
+    pasosPagoNumero.classList.remove("active");
+    pasosPagoTexto.classList.remove("active");
+
+    pasosConfirmacionNumero.classList.remove("active");
+    pasosConfirmacionTexto.classList.remove("active");
+
+    divDetalles.classList.remove("disabled");
+    divPago.classList.add("disabled");
+    divConfirmacion.classList.add("disabled");
+}
+
+function confirmarPago (evt) {
+    evt.preventDefault();
+
+    pasosConfirmacionNumero.classList.add("active");
+    pasosConfirmacionTexto.classList.add("active");
+
+    pasosPagoNumero.classList.remove("active");
+    pasosPagoTexto.classList.remove("active");
+
+    divPago.classList.add("disabled");
+    divConfirmacion.classList.remove("disabled");
+}
+
 /****** CARRITO *****/
 /*let productosLS = localStorage.getItem("productos-carrito");
 productosLS = JSON.parse(productosLS);

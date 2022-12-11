@@ -27,17 +27,17 @@
         
                 <div class="header-barra">
                     <div class="header-contactos">
-                        <a href="tel:0111523456789">
+                        <a class="contactos-enlace" href="tel:0111523456789">
                             <i class="bi bi-telephone-fill"></i>
-                            <span>+5491523456789</span>
+                            <span class="enlace-info">+5491523456789</span>
                         </a>
-                        <a href="mailto:tiendavirtual@gmail.com">
+                        <a class="contactos-enlace" href="mailto:tiendavirtual@gmail.com">
                             <i class="bi bi-envelope"></i>
-                            <span>tiendavirtual@gmail.com</span>
+                            <span class="enlace-info">tiendavirtual@gmail.com</span>
                         </a>
-                        <a href="https://www.instagram.com/">
+                        <a class="contactos-enlace" href="https://www.instagram.com/">
                             <i class="bi bi-instagram"></i>
-                            <span>TiendaVirtual</span>
+                            <span class="enlace-info">TiendaVirtual</span>
                         </a>
                     </div>
         
@@ -58,29 +58,29 @@
             <div class="confirmacion-pasos">
 
                 <div class="paso">
-                    <div class="paso-numero active">1</div>
-                    <p class="active">Tus detalles</p>
+                    <div class="paso-numero active" id="pasos-detalles-numero">1</div>
+                    <p class="active" id="pasos-detalles-texto">Tus detalles</p>
                 </div>
 
                 <div class="paso">
-                    <div class="paso-numero">2</div>
-                    <p class="">Pago</p>
+                    <div class="paso-numero" id="pasos-pago-numero">2</div>
+                    <p id="pasos-pago-texto">Pago</p>
                 </div>
 
                 <div class="paso">
-                    <div class="paso-numero">3</div>
-                    <p class="">Confirmación</p>
+                    <div class="paso-numero" id="pasos-confirmacion-numero">3</div>
+                    <p id="pasos-confirmacion-texto">Confirmación</p>
                 </div>
 
             </div>
 
             <div class="confirmacion-datos">
 
-                <div class="detalles disabled">
+                <div class="detalles" id="detalles">
 
                     <h2>Tus detalles</h2>
 
-                    <form class="carrito-form">
+                    <form class="carrito-form" id="carrito-detalles-form">
 
                         <div class="form-info">
                             <input type="text" class="form-control" placeholder="Nombre" required>
@@ -104,17 +104,17 @@
                             <input type="text" class="form-control" placeholder="Teléfono" required>
                         </div>
 
-                        <button class="boton-confirmar-dato">Confirmar datos</button>
+                        <button type="submit" class="boton-confirmar-dato">Confirmar datos</button>
 
                     </form>
 
                 </div>
 
-                <div class="pago disabled">
+                <div class="pago disabled" id="pago">
 
                     <h2>Pago</h2>
 
-                    <form class="carrito-form">
+                    <form class="carrito-form" id="carrito-pago-form">
 
                         <div class="form-tarjeta">
                             <input type="text" class="form-control" placeholder="Nombre de Tarjeta" required>
@@ -124,15 +124,15 @@
                         </div>
 
                         <div class="botones-pago">
-                            <button class="boton-volver">Atrás</button>
-                            <button class="boton-confirmar-pago">Confirmar pago de $1000</button>
+                            <button id="boton-pago-atras" class="boton-volver">Atrás</button>
+                            <button type="submit" class="boton-confirmar-pago">Confirmar pago de $1000</button>
                         </div>
 
                     </form>
 
                 </div>
 
-                <div class="confirmacion ">
+                <div class="confirmacion disabled" id="confirmacion">
 
                     <div class="confirmado">
                         <h2>Confirmación</h2>
