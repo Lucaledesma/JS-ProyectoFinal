@@ -2,7 +2,7 @@
     {
         "id": "deportes-01",
         "titulo": "Captain Tsubasa",
-        "imagen": "../img/productos/deportes/01.jpg",
+        "imagen": "./img/productos/deportes/01.jpg",
         "precio": 1500,
         "categoria": {
             "nombre": "Deportes",
@@ -12,7 +12,7 @@
     {
         "id": "deportes-02",
         "titulo": "WWE 2K22",
-        "imagen": "../img/productos/deportes/02.jpg",
+        "imagen": "./img/productos/deportes/02.jpg",
         "precio": 1600,
         "categoria": {
             "nombre": "Deportes",
@@ -22,7 +22,7 @@
     {
         "id": "deportes-03",
         "titulo": "NBA 2K23",
-        "imagen": "../img/productos/deportes/03.jpg",
+        "imagen": "./img/productos/deportes/03.jpg",
         "precio": 1700,
         "categoria": {
             "nombre": "Deportes",
@@ -32,7 +32,7 @@
     {
         "id": "deportes-04",
         "titulo": "Ryders Public",
-        "imagen": "../img/productos/deportes/04.jpg",
+        "imagen": "./img/productos/deportes/04.jpg",
         "precio": 1800,
         "categoria": {
             "nombre": "Deportes",
@@ -42,7 +42,7 @@
     {
         "id": "deportes-05",
         "titulo": "F1 2022",
-        "imagen": "../img/productos/deportes/05.jpg",
+        "imagen": "./img/productos/deportes/05.jpg",
         "precio": 1900,
         "categoria": {
             "nombre": "Deportes",
@@ -52,7 +52,7 @@
     {
         "id": "deportes-06",
         "titulo": "FIFA 2023",
-        "imagen": "../img/productos/deportes/06.jpg",
+        "imagen": "./img/productos/deportes/06.jpg",
         "precio": 2000,
         "categoria": {
             "nombre": "Deportes",
@@ -62,7 +62,7 @@
     {
         "id": "cooperativo-01",
         "titulo": "A Way Out",
-        "imagen": "../img/productos/cooperativo/01.jpg",
+        "imagen": "./img/productos/cooperativo/01.jpg",
         "precio": 1500,
         "categoria": {
             "nombre": "Cooperativo",
@@ -72,7 +72,7 @@
     {
         "id": "cooperativo-02",
         "titulo": "Black Blood 4",
-        "imagen": "../img/productos/cooperativo/02.jpg",
+        "imagen": "./img/productos/cooperativo/02.jpg",
         "precio": 1600,
         "categoria": {
             "nombre": "Cooperativo",
@@ -82,7 +82,7 @@
     {
         "id": "cooperativo-03",
         "titulo": "It Takes Two",
-        "imagen": "../img/productos/cooperativo/03.jpg",
+        "imagen": "./img/productos/cooperativo/03.jpg",
         "precio": 1700,
         "categoria": {
             "nombre": "Cooperativo",
@@ -92,7 +92,7 @@
     {
         "id": "cooperativo-04",
         "titulo": "Crash Team Racing",
-        "imagen": "../img/productos/cooperativo/04.jpg",
+        "imagen": "./img/productos/cooperativo/04.jpg",
         "precio": 1800,
         "categoria": {
             "nombre": "Cooperativo",
@@ -102,7 +102,7 @@
     {
         "id": "cooperativo-05",
         "titulo": "Mortal Kombat 11",
-        "imagen": "../img/productos/cooperativo/05.jpg",
+        "imagen": "./img/productos/cooperativo/05.jpg",
         "precio": 1900,
         "categoria": {
             "nombre": "Cooperativo",
@@ -112,7 +112,7 @@
     {
         "id": "cooperativo-06",
         "titulo": "Little Nightmares 2",
-        "imagen": "../img/productos/cooperativo/06.jpg",
+        "imagen": "./img/productos/cooperativo/06.jpg",
         "precio": 2000,
         "categoria": {
             "nombre": "Cooperativo",
@@ -122,7 +122,7 @@
     {
         "id": "disparos-01",
         "titulo": "Battlefield 2042",
-        "imagen": "../img/productos/disparos/01.jpg",
+        "imagen": "./img/productos/disparos/01.jpg",
         "precio": 1500,
         "categoria": {
             "nombre": "Disparos",
@@ -132,7 +132,7 @@
     {
         "id": "disparos-02",
         "titulo": "DOOM Eternal",
-        "imagen": "../img/productos/disparos/02.jpg",
+        "imagen": "./img/productos/disparos/02.jpg",
         "precio": 1600,
         "categoria": {
             "nombre": "Disparos",
@@ -142,7 +142,7 @@
     {
         "id": "disparos-03",
         "titulo": "COD Modern Warfare 2",
-        "imagen": "../img/productos/disparos/03.jpg",
+        "imagen": "./img/productos/disparos/03.jpg",
         "precio": 1700,
         "categoria": {
             "nombre": "Disparos",
@@ -152,7 +152,7 @@
     {
         "id": "disparos-04",
         "titulo": "Sniper Elite 5",
-        "imagen": "../img/productos/disparos/04.jpg",
+        "imagen": "./img/productos/disparos/04.jpg",
         "precio": 1800,
         "categoria": {
             "nombre": "Disparos",
@@ -162,7 +162,7 @@
     {
         "id": "disparos-05",
         "titulo": "Insurgency Sandstorm",
-        "imagen": "../img/productos/disparos/05.jpg",
+        "imagen": "./img/productos/disparos/05.jpg",
         "precio": 1900,
         "categoria": {
             "nombre": "Disparos",
@@ -172,7 +172,7 @@
     {
         "id": "disparos-06",
         "titulo": "MAFIA 3",
-        "imagen": "../img/productos/disparos/06.jpg",
+        "imagen": "./img/productos/disparos/06.jpg",
         "precio": 2000,
         "categoria": {
             "nombre": "Disparos",
@@ -182,7 +182,7 @@
     {
         "id": "mundoabierto-01",
         "titulo": "Elder Ring",
-        "imagen": "../img/productos/mundo-abierto/01.jpg",
+        "imagen": "./img/productos/mundo-abierto/01.jpg",
         "precio": 1500,
         "categoria": {
             "nombre": "Mundo Abierto",
@@ -192,7 +192,7 @@
     {
         "id": "mundoabierto-02",
         "titulo": "GOW Ragnarok",
-        "imagen": "../img/productos/mundo-abierto/02.jpg",
+        "imagen": "./img/productos/mundo-abierto/02.jpg",
         "precio": 1600,
         "categoria": {
             "nombre": "Mundo Abierto",
@@ -202,7 +202,7 @@
     {
         "id": "mundoabierto-03",
         "titulo": "Red Dead Redemption 2",
-        "imagen": "../img/productos/mundo-abierto/03.jpg",
+        "imagen": "./img/productos/mundo-abierto/03.jpg",
         "precio": 1700,
         "categoria": {
             "nombre": "Mundo Abierto",
@@ -212,7 +212,7 @@
     {
         "id": "mundoabierto-04",
         "titulo": "The Witcher 3",
-        "imagen": "../img/productos/mundo-abierto/04.jpg",
+        "imagen": "./img/productos/mundo-abierto/04.jpg",
         "precio": 1800,
         "categoria": {
             "nombre": "Mundo Abierto",
@@ -222,7 +222,7 @@
     {
         "id": "mundoabierto-05",
         "titulo": "Assasins Creed Valhalla",
-        "imagen": "../img/productos/mundo-abierto/05.jpg",
+        "imagen": "./img/productos/mundo-abierto/05.jpg",
         "precio": 1900,
         "categoria": {
             "nombre": "Mundo Abierto",
@@ -232,7 +232,7 @@
     {
         "id": "mundoabierto-06",
         "titulo": "Far Cry 6",
-        "imagen": "../img/productos/mundo-abierto/06.jpg",
+        "imagen": "./img/productos/mundo-abierto/06.jpg",
         "precio": 2000,
         "categoria": {
             "nombre": "Mundo Abierto",
