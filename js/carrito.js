@@ -6,6 +6,8 @@ const contenedorCarrito = document.querySelector("#contenedor-productos-carrito"
 const contenedorTotal = document.querySelector("#total");
 const contenedorTotalConfirmar = document.querySelector("#total-confirmar");
 
+const volverIndex = document.querySelector("#volver-tienda");
+
 mostrarProductosCarrito(productosLS);
 
 function mostrarProductosCarrito(productos) {
@@ -35,6 +37,13 @@ function actualizarTotal(){
     const totalCalculado =  productosLS.reduce((acumulador, producto) => acumulador + (producto.precio * producto.cantidad), 0);
     contenedorTotal.textContent = `$${totalCalculado}`;
     contenedorTotalConfirmar.textContent = `$${totalCalculado}`;
+}
+
+volverIndex.addEventListener("click", vaciarCarrito);
+
+function vaciarCarrito() {
+    productosLS.length = 0;
+    localStorage.setItem("productos-carrito", JSON.stringify(productosLS));
 }
 
 /********* CARRITO - PASOS DE CONFIRMACION *********/
