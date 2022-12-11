@@ -125,7 +125,7 @@
 
                         <div class="botones-pago">
                             <button id="boton-pago-atras" class="boton-volver">Atrás</button>
-                            <button type="submit" class="boton-confirmar-pago">Confirmar pago de $1000</button>
+                            <button type="submit" class="boton-confirmar-pago">Confirmar pago de <span id="total-confirmar"></span></button>
                         </div>
 
                     </form>
@@ -158,37 +158,18 @@
                <div class="recibo">
                     <h3>Tu Carrito</h3>
 
-                    <div class="producto-agregado">
-                        <div class="producto-img"><img src="./img/productos/cooperativo/03.jpg" style="width: 50px;" alt=""></div>
-                        <div class="producto-nombre">It Takes Two</div>
-                        <div class="producto-cantidad">1</div>
-                        <div class="producto-precio">$1000</div>
-                        <div class="producto-borrar"><i class="bi bi-trash-fill"></i></div>
-                    </div>
-
-                    <div class="producto-agregado">
-                        <div class="producto-img"><img src="./img/productos/cooperativo/03.jpg" style="width: 50px;" alt=""></div>
-                        <div class="producto-nombre">It Takes Two</div>
-                        <div class="producto-cantidad">1</div>
-                        <div class="producto-precio">$1000</div>
-                        <div class="producto-borrar"><i class="bi bi-trash-fill"></i></div>
+                    <div id="contenedor-productos-carrito">
+                        <!-- Aca se cargan los productos del carrito -->
                     </div>
                     
                     <div class="total">
                         <h5>Total</h5>
-                        <h5>$1000</h5>
+                        <h5 id="total"></h5>
                     </div>
                </div>
 
-               <div class="recibo">
-                    <h3>Tus detalles</h3>
-
-                    <div class="informacion-personal">
-                        <div class="informacion-personal__nombre">a a</div>
-                        <div class="informacion-personal__email">a - a - a</div>
-                        <div class="informacion-personal__pais">a a - a</div>
-                        <div class="informacion-personal__direccion">a@a - a</div>
-                    </div>
+               <div id="informacion-personal" class="recibo disabled">
+                    <!-- Aca se muestran los detalles cargados -->
                </div>
 
             </div>
@@ -206,60 +187,6 @@
             <a href="https://www.instagram.com/coderhouse/"><i class="bi bi-instagram"></i></a>
         </div>
     </footer> 
-
-    <!-- <header class="header">
-        <div>
-            <h1>TERCER ENTREGA - LUCA LEDESMA</h1>
-            <h1>Tienda de Juegos</h1>
-        </div>
-
-        <nav>
-            <a class="nav-carrito" href="./index.html"><i class="bi bi-house-door-fill"></i></a>
-        </nav>
-    </header>
-
-    <main class="main">
-
-        <section class="carrito">
-
-            <div class="titulo-carrito">
-                <h2>Productos del carrito</h2>
-            </div>
-        
-            <div class="contenedor-carrito">
-        
-                <p id="carrito-vacio" class="carrito-vacio">El carrito esta vacio.</p>
-                
-                <section id="contenedor-carrito" class="productos-del-carrito">
-                    Se cargan los productos desde JS
-                </section>
-        
-                <div id="carrito-acciones" class="carrito-acciones">
-                    <div class="carrito-vaciar">
-                        <button id="boton-vaciar">VACIAR CARRITO</button>
-                    </div>
-        
-                    <div class="carrito-comprar">
-                        <div class="carrito-comprar-total">
-                            <p><b>TOTAL:</b></p>
-                            <p id="total"></p>
-                        </div>
-                        <button id="boton-comprar">COMPRAR</button>
-                    </div>
-        
-                </div>
-        
-                <p id="carrito-compra" class="carrito-compra">¡Muchas gracias por tu compra!</p>
-        
-            </div>
-        
-        </section>
-
-    </main>
-
-    <footer class="footer">
-        <p class="footer-p">© CoderHouse - Tercer Entrega (Proyecto Final)</p>
-    </footer> -->
         
     <script src="./js/carrito.js"></script>
 </body>

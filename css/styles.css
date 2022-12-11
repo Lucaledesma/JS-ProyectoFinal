@@ -184,7 +184,7 @@ li {
     cursor: pointer;
 }
 
-.cat a.active {
+.cat.active {
    font-weight: bold;
    color: var(--clr-dark);
 }
@@ -383,8 +383,8 @@ li {
     overflow-y: scroll;
     gap: 1rem;
     max-height: 60vh;
-    background-color: var(--clr-dark);
-    color: var(--clr-main);
+    background-color: var(--clr-main);
+    color: var(--clr-dark);
 }
 
 .producto-agregado {
@@ -396,6 +396,7 @@ li {
 }
 
 .producto-img img{
+    max-width: 100%;
     border-radius: .6rem;
 }
 
@@ -421,7 +422,7 @@ li {
     padding: .6rem 1rem;
     background-color: var(--clr-main);
     color: var(--clr-dark);
-    border-top: 2px solid var(--clr-main);
+    border-top: 1px solid var(--clr-dark);
     border-bottom-left-radius: 2rem;
     border-bottom-right-radius: 2rem;
     transition: background-color .4s, color .4s;
