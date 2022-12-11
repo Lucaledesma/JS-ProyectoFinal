@@ -1,5 +1,3 @@
-// Hacer en el contenedor de carritos (contenedor.innerHTML == "") para que a no se muestre el contenedor
-
 const carritoBoton = document.querySelector("#boton-carrito");
 const carritoMain = document.querySelector("#main-carrito");
 const cerrarCarritoBoton = document.querySelector("#cerrar-carrito");
@@ -16,15 +14,10 @@ const botonVaciar = document.querySelector("#vaciar-carrito");
 
 const contenedorTotal = document.querySelector("#total");
 
-/* Cargar Productos del JSON*/
-/*fetch("./js/productos.json")
-    .then ( response => response.json())
-    .then ( data => {
-        mostrarProductos(data);
-    })
-    .catch (err => {
-        console.log(err);
-    });*/
+const buscadorHeader = document.querySelector("#header-buscador");
+const buscadorInput = document.querySelector("#buscador-input");
+
+const productosAgregadosNombres = document.querySelectorAll(".producto-nombre");
 
 const pedirProductos = async () => {
     const resp = await fetch ("./js/productos.json");
@@ -63,9 +56,11 @@ function cargarBotonesCategorias(productos) {
                 tituloPrincipal.textContent = productoCategoria.categoria.nombre;
                 const productosBoton = productos.filter(producto => producto.categoria.id === e.currentTarget.id);
                 mostrarProductos(productosBoton);
+                tituloPrincipal.scrollIntoView();
             } else {
                 tituloPrincipal.textContent = "Todos los productos";
                 mostrarProductos(productos);
+                tituloPrincipal.scrollIntoView();
             }
     
         })
@@ -295,4 +290,36 @@ function confirmarFaltaDeProductos(){
         p.textContent = "No hay Productos";
         carritoProductos.append(p); 
     }
-};
+}
+
+buscadorHeader.addEventListener("submit", buscarJuego);
+
+function buscarJuego(evt) {
+    evt.preventDefault();
+
+    const input = buscadorInput.value.toLowerCase();
+    
+    let productos = pedirProductos();
+
+    productos
+    .then( productos => {
+
+        const array = productos.filter( 
+            producto => producto.titulo.toLowerCase().includes(input)
+        );
+
+        if (array.length === 0 || input === "" || input == " "){
+            array.length = 0;
+            tituloPrincipal.textContent = `No se encontro "${input}"`;
+            tituloPrincipal.scrollIntoView();
+            mostrarProductos(array);
+        } else {
+            tituloPrincipal.textContent = `Resultados de "${input}"`;
+            mostrarProductos(array);
+            tituloPrincipal.scrollIntoView();
+        }
+
+    });
+
+    buscadorHeader.reset();
+}
