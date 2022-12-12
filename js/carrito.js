@@ -16,14 +16,16 @@ function mostrarProductosCarrito(productos) {
 
     productos.forEach( producto => {
 
+        const {imagen, titulo, cantidad, precio} = producto;
+
         const div = document.createElement("div");
 
         div.classList.add("producto-agregado");
         div.innerHTML = `
-          <div class="producto-img"><img src="${producto.imagen}" alt="${producto.titulo}"></div>
-          <div class="producto-nombre">${producto.titulo}</div>
-          <div class="producto-cantidad">${producto.cantidad}</div>
-          <div class="producto-precio">$${producto.precio}</div>
+          <div class="producto-img"><img src="${imagen}" alt="${titulo}"></div>
+          <div class="producto-nombre">${titulo}</div>
+          <div class="producto-cantidad">${cantidad}</div>
+          <div class="producto-precio">$${precio}</div>
         `;
 
         contenedorCarrito.append(div);

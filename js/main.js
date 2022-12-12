@@ -67,7 +67,6 @@ function cargarBotonesCategorias(productos) {
     });
 }
 
-/* Abrir y Cerrar Carrito */
 carritoBoton.addEventListener("click", abrirCarrito);
 cerrarCarritoBoton.addEventListener("click", cerrarCarrito);
 
@@ -89,19 +88,19 @@ function mostrarProductos (productos) {
 
     productos.forEach( producto => {
 
+        const {imagen, titulo, precio, id} = producto;
+
         const div = document.createElement("div");
 
         div.classList.add("producto");
         div.innerHTML = `
-          <img src="${producto.imagen}" alt="${producto.titulo}">
+          <img src="${imagen}" alt="${titulo}">
           <div class="producto-descripcion">
-              <p><b>${producto.titulo}</b></p>
-              <p>$${producto.precio}</p>
-              <button class="producto-agregar" id="${producto.id}">AGREGAR</button>
+              <p><b>${titulo}</b></p>
+              <p>$${precio}</p>
+              <button class="producto-agregar" id="${id}">AGREGAR</button>
           </div>
-        `;
-
-        contenedorProductos.append(div);
+        `;        contenedorProductos.append(div);
     });
 
     actualizarBotonesAgregar();
@@ -172,17 +171,18 @@ function mostrarProductosCarrito(productos) {
 
     productos.forEach( producto => {
 
+        const {imagen, titulo, cantidad, precio, id} = producto;
+
         const div = document.createElement("div");
 
         div.classList.add("producto-agregado");
         div.innerHTML = `
-          <div class="producto-img"><img src="${producto.imagen}" alt="${producto.titulo}"></div>
-          <div class="producto-nombre">${producto.titulo}</div>
-          <div class="producto-cantidad">${producto.cantidad}</div>
-          <div class="producto-precio">$${producto.precio}</div>
-          <div class="producto-borrar" id="${producto.id}"><i class="bi bi-trash-fill"></i></div>
-        `;
-
+          <div class="producto-img"><img src="${imagen}" alt="${titulo}"></div>
+          <div class="producto-nombre">${titulo}</div>
+          <div class="producto-cantidad">${cantidad}</div>
+          <div class="producto-precio">$${precio}</div>
+          <div class="producto-borrar" id="${id}"><i class="bi bi-trash-fill"></i></div>
+        `
         carritoProductos.append(div);
     });
 

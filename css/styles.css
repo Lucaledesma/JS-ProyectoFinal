@@ -32,8 +32,8 @@ li {
 /* HEADER */
 .enlace-info {
     display: none;
-    font-size: .9rem;
     color: var(--clr-dark);
+    font-size: .9rem;
     justify-content: center;
     align-items: center;
     transition: .4s color;
@@ -65,9 +65,8 @@ li {
 .header-barra_superior {
     background-color: var(--clr-dark);
     color: var(--clr-light);
-
-    text-align: center;
     padding: .5rem;
+    text-align: center;
 }
 
 .header-logo__barra {
@@ -79,14 +78,14 @@ li {
 
 .header-logo {
     max-width: max-content;
+    padding-inline: 1rem;
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
     display: flex;
     align-items: center;
     justify-content: center;
     gap: .5rem;
-    background-color: var(--clr-dark);
-    color: var(--clr-light);
     border-radius: 15px;
-    padding-inline: 1rem;
     transition: background-color .3s, color .3s;
 }
 
@@ -96,9 +95,9 @@ li {
 }
 
 .header-logo i{
+    padding-right: 1rem;
     font-size: 2rem;
     border-right: 2px solid var(--clr-light);
-    padding-right: 1rem;
 }
 
 .header-logo h2{
@@ -106,12 +105,12 @@ li {
 }
 
 .header-contactos {
+    margin-top: 1rem;
     display: flex;
-    font-size: 1.25rem;
-    gap: 2.5rem;
     justify-content: center;
     align-items: center;
-    margin-top: 1rem;
+    gap: 2.5rem;
+    font-size: 1.25rem;
 }
 
 .header-contactos i {
@@ -124,17 +123,17 @@ li {
 }
 
 .header-buscador {
+    margin-block: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-block: 1rem;
     border-radius: .5rem;
 }
 
 .campoBuscar {
     background-color: var(--clr-light);
-    border: 1px solid var(--clr-soft);
     padding: .5rem;
+    border: 1px solid var(--clr-soft);
     border-top-left-radius: .5rem;
     border-bottom-left-radius: .5rem;
     font-size: 1rem;
@@ -160,11 +159,11 @@ li {
 
 /* INDEX MAIN */
 .main-hero{
+    background-color: var(--clr-dark);
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    background-color: var(--clr-dark);
-    padding: 2rem;
 }
 
 .lista-categorias {
@@ -178,15 +177,15 @@ li {
 .cat {
     width: 100%;
     padding: 1rem;
-    border-bottom: 1px solid var(--clr-dark);
     background-color: var(--clr-light);
     color: var(--clr-grey);
+    border-bottom: 1px solid var(--clr-dark);
     cursor: pointer;
 }
 
 .cat.active {
+    color: var(--clr-dark);
    font-weight: bold;
-   color: var(--clr-dark);
 }
 
 /* .cat:nth-child(1) */
@@ -657,10 +656,6 @@ li {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-.content-class {
-    background-color: red;
 }
 
 .disabled {
